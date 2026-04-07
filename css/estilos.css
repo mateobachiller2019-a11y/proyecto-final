@@ -1,18 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; /* Fuente legible y moderna */
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0; /* Elimina el relleno predeterminado del navegador */
 }
 header {
-    background-color: #afbcc1;
+    background-color: #805a3b;
     color: white;
     padding: 20px;
     text-align: center;
 }
 section {
-
+     min-height: 100vh;/* Altura mínima para ocupar toda la pantalla*/
     padding: 20px;
-    background-color: #898886 ;
+    background-color: #fef2e4; ;
 }
 
 
@@ -23,31 +23,59 @@ div {
 }
 
 h2 {
-    color: #c39c57;
-    text-align: center;
+    color: #c60000;
+    text-align: center;     /* Centra el título */
 }
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    align-items: center;
+    text-align: center;
 }
 a {
-    color: #c39c57;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 18px; /* Tamaño de fuente para los enlaces */
     margin: 0 10px;
+    
+    
+    
     
 }
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #c39c57;
+    display: flex;  /* Utiliza flexbox para centrar el contenido del botón */
+    justify-content: center; /* Centra horizontalmente el contenido del botón */
+    align-items: center;    /* Centra verticalmente el contenido del botón */
+    background-color: #805a3b;
     color: white;
     padding: 10px 20px;
     border: 1px solid #75716a;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 15px; 
+    border-radius: 10px;    /* Bordes redondeados para el botón */
+    text-decoration: none;  /* Elimina el subrayado de los enlaces */
+    font-size: 15px;        /* Tamaño de fuente para el texto del botón */
     
+}
+
+div.menu:hover {
+    background-color: #c60000; /* Cambia el color de fondo del menú al pasar el mouse */
+    padding: 10px 20px; /* Agrega un poco de relleno al menú al pasar el mouse */
+    border-radius: 10px; 
+    
+
+}
+
+.btn:hover {
+    background-color: #c60000; /* Cambia el color de fondo del botón al pasar el mouse */
+    color: white; /* Mantiene el texto blanco al pasar el mouse */
+}
+
+p {
+    text-align: center; /* Centra el texto */
+    font-size: 21px; /* Tamaño de fuente para los párrafos */
+    color: #333; /* Color del texto */
+}
+div.menu{
+    display: inline;
+    width: 100%;
 }
