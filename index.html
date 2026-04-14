@@ -7,55 +7,99 @@
     <title>Restaurante Mateo & Genesis</title>
     <link rel="icon" type="imag" href="img/logo.jpg"> <!-- poner logo del restaurante -->
     <link rel="stylesheet" href="css/estilos.css"> <!-- poner el css para darle estilo a la pagina web -->
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
+    <!-- poner el bootstrap para darle estilo a la pagina web -->
 
 
 </head>
 
-<body>
+<body> <!-- poner un fondo claro a la pagina web -->
 
     <header> <!-- poner como un menu de toda la pagina web -->
 
-        <h1>RESTAURANTE MATEO & GENESIS</h1> <!-- poner nombre del restaurante -->
-        <p>Un poco de salud en cada bocado.</p> <!-- poner slogan del restaurante -->
-        <!-- <img src="" alt="">  poner imagen       -->
-        <div>
-            <div class="menu">
-                <a href="#"> Inicio</a> <!-- poner inicio -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top  ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand h1 " href="#">
+                                <img src="img/logo.jpg" alt="" width="30" height="25">
+                                Restaurante Mateo & Genesis
+                            </a>
+                        </div>
+                    </nav>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto fst-italic h5 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vistas/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vistas/ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vistas/contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu">
-                <a href="vistas/menu.html">Menu</a></li> <!-- poner menu -->
-            </div>
-            <div class="menu">
-                <a href="vistas/contactos.html">Contactos</a> <!-- poner contactos -->
-            </div>
-
-            <div class="menu">
-                <a href="vistas/ubicacion.html">Ubicacion</a> <!-- poner ubicacion -->
-            </div>
-
-        </div>
-
+        </nav>
     </header>
 
-    <section class="quienes somos"> <!-- poner clas quienes somos -->
+
+
+    <div class="card bg-dark text-white text-center mark m-5 ">
+        <img src="img/1.jpeg" class="img-fluid  " alt="...">
+        <div class="card-img-overlay">
+            <p class="h1 mt-5 fst-italic">RESTAURANT MATEO & GENESIS</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid text-center">
+        <img src="img/logo.jpg" class="img-fluid" alt="...">
+    </div>
+
+
+    <div class="container text-center">
         <div>
             <h2>Quienes somos</h2>
 
         </div>
         <div>
-            <p>Brindamos una variedad de servicios de alta calidad que están diseñados para propietarios de negocios que
+            <p class="lead">
+                Brindamos una variedad de servicios de alta calidad que están diseñados para propietarios de negocios
+                que
                 necesitan soporte asequible, confiable y de calidad.
 
                 Con años de experiencia y cientos de clientes felices y satisfechos, establecimos un equipo de
                 profesionales
-                y expertos trabajadores para satisfacer todas sus necesidades. </p>
+                y expertos trabajadores para satisfacer todas sus necesidades.
+            </p>
         </div>
-        <div class="ver">
-            <a href="vistas/menu.html " class="btn">Ver mas:</a>
-        </div>
+        <a href="vistas/menu.html "><button type="button" class="btn btn-outline-dark">Ver menú</button></a>
+    </div>>
 
-    </section>
 
+
+
+
+    <script src="public/bootstrap/js/bootstrap.min.js">
+    </script>
 </body>
 
 </html>

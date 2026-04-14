@@ -7,6 +7,7 @@
     <title>Restaurante Mateo & Genesis</title>
     <link rel="icon" type="imag" href="img/logo.jpg"> <!-- poner logo del restaurante -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- poner el css para darle estilo a la pagina web -->
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
 
 
 </head>
@@ -15,99 +16,124 @@
 
     <header> <!-- poner como un menu de toda la pagina web -->
 
-        <h1>RESTAURANTE MATEO & GENESIS</h1> <!-- poner nombre del restaurante -->
-        <p>Un poco de salud en cada bocado.</p> <!-- poner slogan del restaurante -->
-        <!-- <img src="" alt="">  poner imagen       -->
-        <div>
-            <div class="menu">
-                <a href="../index.html"> Inicio</a> <!-- poner inicio -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Restaurante Mateo & Genesis</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/contactos.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu">
-                <a href="#">Menu</a></li> <!-- poner menu -->
-            </div>
-            <div class="menu">
-                <a href="contactos.html">Contactos</a> <!-- poner contactos -->
-            </div>
-
-            <div class="menu">
-                <a href="ubicacion.html">Ubicacion</a> <!-- poner ubicacion -->
-            </div>
-
-        </div>
-
+        </nav>
     </header>
-    <section>
-        <div>
-            <h2>MENU</h2>
-        </div>
 
-        <div>
-
-            <table>
+    <div class="container text-center"> 
+        <h1 class="display-6 text-center">Menu</h1>
+        <table class="table ">
+            <thead>
                 <tr>
-                    <th>Menu</th>
-                    <th>Descripcion</th>
-                    <th>Precio</th>
+                    <th scope="col">#</th>
+                    <th scope="col">Platos</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Precio</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td>Almurzo</td>
+                    <th scope="row">1</th>
+                    <td>Almuerzo</td>
                     <td>Sopa, Segundo y Jugo (todos los dias varia)</td>
                     <td>$2.00</td>
                 </tr>
                 <tr>
+                    <th scope="row">2</th>
                     <td>Desayuno Continental</td>
                     <td>Leche, Pan, Huevos y Jugo</td>
                     <td>$2.00</td>
-
                 </tr>
                 <tr>
+                    <th scope="row">3</th>
                     <td>Desayuno Completo</td>
                     <td>Leche, Pan, Huevos, Jugo y Seco</td>
                     <td>$3.00</td>
                 </tr>
                 <tr>
+                    <th scope="row">4</th>
                     <td>Seco de Pollo</td>
                     <td>Arroz, Ensaldas, Seco de Pollo y Cafe o Agua Aromatica</td>
                     <td>$1.75</td>
                 </tr>
                 <tr>
+                    <th scope="row">5</th>
                     <td>Biste de Carne</td>
                     <td>Arroz, Ensaldas, Biste de Carne y Cafe o Agua Aromatica</td>
                     <td>$1.75</td>
                 </tr>
                 <tr>
+                    <th scope="row">6</th>
                     <td>Guatita</td>
                     <td>Arroz, Ensaldas, Guatita y Cafe o Agua Aromatica</td>
                     <td>$1.75</td>
                 </tr>
                 <tr>
+                    <th scope="row">7</th>
                     <td>Papas con Cuero</td>
                     <td>Arroz, Ensaldas, Papas con Cuero y Cafe o Agua Aromatica</td>
                     <td>$1.75</td>
                 </tr>
                 <tr>
+                    <th scope="row">8</th>
                     <td>Combos</td>
                     <td>2 Tortillas de verde, 2 Huevos Fritos y Cafe o Agua Aromatica</td>
                     <td>$1.75</td>
                 </tr>
                 <tr>
+                    <th scope="row">9</th>
                     <td>Tigrillo</td>
                     <td>Tigrillo, Huevo Frito y Cafe o Agua Aromatica</td>
                     <td>$2.00</td>
                 </tr>
                 <tr>
+                    <th scope="row">10</th>
                     <td>Bolon </td>
                     <td>Bolon(queso o chicharon), Huevo Frito y Cafe o Agua Aromatica</td>
                     <td>$1.75</td>
                 </tr>
-
-
-            </table>
+            </tbody>
+        </table>
+        <div >
+            <a href="../vistas/ubicacion.html"><button type="button" class="btn btn-outline-dark">Ver ubicacion</button></a>
         </div>
-        <br>
-        <div>
-            <a href="contactos.html" class="btn">Ver mas:</a>
-        </div>
+    </div>
 
 
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.min.js">
+</body>
