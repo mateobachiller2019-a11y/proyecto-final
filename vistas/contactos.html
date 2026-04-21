@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Mateo & Genesis</title>
-    <link rel="icon" type="imag" href="img/logo.jpg"> <!-- poner logo del restaurante -->
+    <link rel="icon" type="imag" href="../img/logo.jpeg"> <!-- poner logo del restaurante -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- poner el css para darle estilo a la pagina web -->
     <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+    <!-- poner el bootstrap para darle estilo a la pagina web -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
 </head>
@@ -17,14 +19,23 @@
 
     <header> <!-- poner como un menu de toda la pagina web -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top  ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Restaurante Mateo & Genesis</a>
+                <a class="navbar-brand" href="#">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand h1 " href="../index.html">
+                                <img src="../img/logo.jpeg" alt="" width="30" height="25">
+                                Restaurante Mateo & Genesis
+                            </a>
+                        </div>
+                    </nav>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse h5 fst-italic" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
@@ -43,22 +54,79 @@
             </div>
         </nav>
     </header>
+    <br class="mt-5">
+    <br class="mt-5">
 
-    <section>
-        <div>
-            <h2>Contactos</h2>
+    <div class="container-fluid text-center">
+        <img src="../img/logo.jpeg" class="img-fluid m-5" alt="...">
+    </div>
+
+
+
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="info-card text-center">
+                    <h5 class="display-6"><i class="fas fa-map-marker-alt icon"></i>Facebook</h5>
+
+                    <nav class="navbar navbar-light bg-light ">
+                        <div class="container text-center">
+                            <a class="navbar-brand" href="https://www.facebook.com/share/14hFRYn9FRL/">
+                                <i class="bi bi-facebook"></i>Restarurante Mateo & Genesis
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="info-card">
+                    <h5><i class="far fa-clock icon"></i> Horarios de Atención</h5>
+                    <p>lunes a Viernes: 7:00 AM - 4:00 PM</p>
+                    <p>Sábados: 8:00 AM - 3:00 PM</p>
+                    <p>Domingos: Cerrado</p>
+                    <p>Feriados: Cerrado</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="info-card">
+                    <h5><i class="far fa-clock icon"></i> Horarios de Atención</h5>
+                    <p>lunes a Viernes: 7:00 AM - 4:00 PM</p>
+                    <p>Sábados: 8:00 AM - 3:00 PM</p>
+                    <p>Domingos: Cerrado</p>
+                    <p>Feriados: Cerrado</p>
+
+                </div>
+            </div>
         </div>
+    </div>
 
 
 
 
-        <div>
-            <a href="ubicacion.html" class="btn">Ver mas:</a>
-        </div>
-
-    </section>
+    <body>
 
 
-    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.min.js">
 
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>

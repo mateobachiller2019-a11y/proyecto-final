@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Mateo & Genesis</title>
-    <link rel="icon" type="imag" href="img/logo.jpg"> <!-- poner logo del restaurante -->
+    <link rel="icon" type="imag" href="../img/logo.jpeg"> <!-- poner logo del restaurante -->
     <link rel="stylesheet" href="../css/estilos.css"> <!-- poner el css para darle estilo a la pagina web -->
     <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+    <!-- poner el bootstrap para darle estilo a la pagina web -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
 
 
 </head>
@@ -16,14 +20,23 @@
 
     <header> <!-- poner como un menu de toda la pagina web -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top  ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Restaurante Mateo & Genesis</a>
+                <a class="navbar-brand" href="#">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand h1 " href="../index.html">
+                                <img src="../img/logo.jpeg" alt="" width="30" height="25">
+                                Restaurante Mateo & Genesis
+                            </a>
+                        </div>
+                    </nav>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse h5 fst-italic" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
@@ -34,18 +47,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../vistas/ubicacion.html">Ubicacion</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../vistas/contactos.html">Contacto</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <br class="mt-5">
+    <br>
 
-    <div class="container text-center"> 
-        <h1 class="display-6 text-center">Menu</h1>
-        <table class="table ">
+    <div class="container text-center mt-5">
+        <h1 class="display-4 text-center mt-5">¡Menu!</h1>
+        <table class="table mt-1 ">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -117,9 +130,167 @@
                 </tr>
             </tbody>
         </table>
-        <div >
-            <a href="../vistas/ubicacion.html"><button type="button" class="btn btn-outline-dark">Ver ubicacion</button></a>
+
+    </div>
+
+
+    <div class="container text-center mt-5 w-75">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col ">
+                <div class="card h-100">
+                    <img src="../img/almuerzo.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Almuerzos</h5>
+                        <p class="card-text">A la mesa y a disfrutar.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$2.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/continental.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desayuno Continental</h5>
+                        <p class="card-text">Sabores que se comparten, alegrías que crecen.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$2.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/completo.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Desayuno Completo</h5>
+                        <p class="card-text">Comer bien, reír mejor.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$3.00</small>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+
+    <div class="container text-center mt-4 w-75">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/tigrillo.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Tigrillo</h5>
+                        <p class="card-text">A la mesa y a disfrutar.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$2.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/combo.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Combo</h5>
+                        <p class="card-text">Sabores que se comparten alegrías.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$2.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/bolon.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolon</h5>
+                        <p class="card-text">Comer bien, reír mejor.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$2.00</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center mt-4 w-75">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/seco de pollo.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Seco de Pollo</h5>
+                        <p class="card-text">A la mesa y a disfrutar.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$2.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/seco de carne.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Seco de Carne</h5>
+                        <p class="card-text">Sabores que se comparten alegrías.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$2.00</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../img/guatita.jpeg" class="img-thumbnail h-50" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Guatita</h5>
+                        <p class="card-text">Comer bien, reír mejor.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">$3.00</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container text-center m-3">
+            <a href="../vistas/ubicacion.html">
+                <button type="button" class="btn btn-outline-dark">Verubicacion</button></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container-fluid  p-4 text-center " style="background-color: #5C331B;">
+        <div class="row">
+            <div class="col">
+                <a class="text-decoration-none text-white" href="https://www.facebook.com/share/1FbKKMfZsB/">
+                    <i class="bi bi-facebook"></i>Restarurante Mateo & Genesis
+                </a>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none text-white"
+                    href="https://www.instagram.com/mateo.y.genesis?igsh=MTd5M2dneTNqNXBteA==">
+                    <i class="bi bi-instagram"></i>Restarurante Mateo & Genesis
+                </a>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none text-white" href="https://www.facebook.com/share/14hFRYn9FRL/">
+                    <i class="bi bi-tiktok"></i>Restarurante Mateo & Genesis
+                </a>
+            </div>
+        </div>
+
     </div>
 
 
@@ -135,5 +306,9 @@
 
 
 
-    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.min.js">
+
+
+    <script src="../public/bootstrap/js/bootstrap.min.js"></script>
+
+
 </body>

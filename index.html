@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Mateo & Genesis</title>
-    <link rel="icon" type="imag" href="img/logo.jpg"> <!-- poner logo del restaurante -->
+    <link rel="icon" type="imag" href="img/logo.jpeg"> <!-- poner logo del restaurante -->
     <link rel="stylesheet" href="css/estilos.css"> <!-- poner el css para darle estilo a la pagina web -->
     <link rel="stylesheet" href="public/bootstrap/css/bootstrap.min.css">
     <!-- poner el bootstrap para darle estilo a la pagina web -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
 
 
 </head>
@@ -23,7 +26,7 @@
                     <nav class="navbar navbar-light bg-light">
                         <div class="container-fluid">
                             <a class="navbar-brand h1 " href="#">
-                                <img src="img/logo.jpg" alt="" width="30" height="25">
+                                <img src="img/logo.jpeg" alt="" width="40" height="25">
                                 Restaurante Mateo & Genesis
                             </a>
                         </div>
@@ -33,8 +36,8 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto fst-italic h5 ">
+                <div class="collapse navbar-collapse fst-italic h5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto  ">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
@@ -44,9 +47,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="vistas/ubicacion.html">Ubicacion</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="vistas/contactos.html">Contacto</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -54,30 +55,27 @@
     </header>
 
 
-
+    <!--
     <div class="card bg-dark text-white text-center mark m-5 ">
         <img src="img/1.jpeg" class="img-fluid  " alt="...">
         <div class="card-img-overlay">
-            <p class="h1 mt-5 fst-italic">RESTAURANT MATEO & GENESIS</p>
+            <p class="h1 mt-5 fst-italic">RESTAURANTE MATEO & GENESIS</p>
         </div>
     </div>
 
-
-
-
-
+-->
 
 
 
 
     <div class="container-fluid text-center">
-        <img src="img/logo.jpg" class="img-fluid" alt="...">
+        <img src="img/logo.jpeg" class="img-fluid m-5" alt="...">
     </div>
 
 
     <div class="container text-center">
         <div>
-            <h2>Quienes somos</h2>
+            <h2 class="display-4">¡Quienes somos!</h2>
 
         </div>
         <div>
@@ -97,9 +95,33 @@
 
 
 
+    <div class="container-fluid  p-4 text-center " style="background-color: #5C331B;">
+        <div class="row">
+            <div class="col">
+                <a class="text-decoration-none text-white" href="https://www.facebook.com/share/1FbKKMfZsB/">
+                    <i class="bi bi-facebook"></i>Restarurante Mateo & Genesis
+                </a>
+            </div>
+             <div class="col">
+                <a class="text-decoration-none text-white" href="https://www.instagram.com/mateo.y.genesis?igsh=MTd5M2dneTNqNXBteA==">
+                    <i class="bi bi-instagram"></i>Restarurante Mateo & Genesis
+                </a>
+            </div>
+             <div class="col">
+                <a class="text-decoration-none text-white" href="https://www.facebook.com/share/14hFRYn9FRL/">
+                    <i class="bi bi-tiktok"></i>Restarurante Mateo & Genesis
+                </a>
+            </div>
+        </div>
 
-    <script src="public/bootstrap/js/bootstrap.min.js">
-    </script>
+    </div>
+
+
+
+
+
+    <script src="public/bootstrap/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
